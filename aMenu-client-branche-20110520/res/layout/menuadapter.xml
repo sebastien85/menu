@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="horizontal"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent"
+  >
+  	<ImageView android:id="@+id/menu_image" android:layout_width="wrap_content"  android:layout_height="wrap_content" 
+  	android:layout_margin="5px" />
+  	<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  		android:layout_margin="5px">
+  		<TextView android:id="@+id/menu_title" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="22px" /> 
+ 		<TextView android:id="@+id/menu_info" android:layout_width="wrap_content" android:layout_height="wrap_content"  android:textSize="13px" />
+  		
+  	</LinearLayout>
+  	<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="bottom|right">
+	  	<ImageButton android:layout_gravity="right"  android:id="@+id/menu_select"  android:background="@drawable/insert_to_order_cart" android:layout_width="wrap_content" android:layout_height="wrap_content"></ImageButton>
+  	</LinearLayout>
+</LinearLayout>

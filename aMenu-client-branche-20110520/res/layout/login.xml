@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+	android:gravity="center_horizontal"
+	android:background="@drawable/sys_bg"
+	>
+		<ImageView android:id="@+id/logo_bg" android:src="@drawable/logo"
+		 android:adjustViewBounds="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="25px" android:paddingTop="40px"
+            >
+		</ImageView>
+		<TableLayout  android:id="@+id/table_layout" android:paddingTop="180px" android:paddingRight="15px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TableRow  >
+				<TextView android:id="@+id/member_id" android:text="@string/user_id" android:layout_width="wrap_content"
+				android:layout_height="wrap_content"  android:paddingLeft="30px"
+				/>
+				<EditText android:id="@+id/user_id_editText" android:maxLength="20" android:layout_width="200dip"  android:layout_height="wrap_content" 
+				android:layout_marginLeft="10px" android:saveEnabled="true" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip"
+				/>
+			</TableRow>
+			<TableRow>
+				<TextView android:id="@+id/pass_word"  android:text="@string/pass_word"  android:layout_width="fill_parent" 
+				android:layout_height="wrap_content"  android:paddingLeft="30px"/> 
+				<EditText android:id="@+id/password_editText" android:maxLength="20" android:layout_width="200dip"  android:layout_height="wrap_content" 
+				android:layout_marginLeft="10px" android:saveEnabled="true" android:layout_marginTop="5.0dip" android:layout_marginRight="5.0dip"
+				android:password="true"
+				/>
+			</TableRow>
+			
+		</TableLayout>
+		<TableLayout android:paddingTop="300px" android:paddingLeft="60px" android:layout_width="fill_parent" android:layout_height="wrap_content">
+			<TableRow >
+				<ImageButton  android:id="@+id/button_bg" android:background="@drawable/login_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20px" android:paddingLeft="30px"></ImageButton>
+			</TableRow>
+		</TableLayout>
+</AbsoluteLayout>
