@@ -1,21 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.androidApp.ordering"
-      android:versionCode="1"
-      android:versionName="1.0">
+	package="com.androidApp.ordering" android:versionCode="1"
+	android:versionName="1.0">
 
 
-    <application android:icon="@drawable/icon" android:label="@string/app_name">
-        <activity android:name=".Login"
-                  android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-		<activity android:name=".Main" android:label="@string/sys_main" android:screenOrientation="portrait"></activity>
-		<activity android:name=".MenuList" android:label="@string/sys_menu_list" android:screenOrientation="portrait"></activity>
-		<activity android:name=".MenuListContent" android:label="@string/sys_menu_list" android:screenOrientation="portrait"></activity>
-		
-    </application>
+	<application android:icon="@drawable/icon" android:label="@string/app_name"
+		android:name="com.androidApp.ordering.OrderApplication">
+		<!-- 这里有个参数android:debuggable="false" 正式发布的时候是否应该加上去 -->
+
+		<activity android:name=".Login" android:label="@string/app_name">
+			<intent-filter>
+				<action android:name="android.intent.action.MAIN" />
+				<category android:name="android.intent.category.LAUNCHER" />
+			</intent-filter>
+		</activity>
+		<activity android:name=".Main" android:label="@string/sys_main"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MenuList" android:label="@string/sys_menu_list"
+			android:screenOrientation="portrait"></activity>
+		<activity android:name=".MenuListContent" android:label="@string/sys_menu_list"
+			android:screenOrientation="portrait"></activity>
+
+	</application>
 </manifest>
