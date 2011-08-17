@@ -27,4 +27,7 @@ public class LoginService {
         return  null;
     }
 
+    public void updateUser(){
+        
+    }
 }
